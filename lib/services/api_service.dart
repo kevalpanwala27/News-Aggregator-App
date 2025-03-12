@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class ApiService {
-  static const String baseUrl = "http://192.168.57.136:3001/news";
+  static const String baseUrl = "http://192.168.57.136:3001/";
   static const int pageSize = 10;
   static Future<List<dynamic>> fetchNews({
     String category = "general",

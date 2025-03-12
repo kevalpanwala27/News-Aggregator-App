@@ -14,7 +14,7 @@ if (!NEWS_API_KEY) {
   process.exit(1);
 }
 
-app.get("/news", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const category = req.query.category || "general";
     console.log(`Fetching news for category: ${category}`);
